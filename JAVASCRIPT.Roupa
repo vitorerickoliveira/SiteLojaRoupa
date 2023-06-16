@@ -1,0 +1,18 @@
+// Exemplo de interação do usuário
+
+// Seleciona todos os botões "Comprar"
+const botoesComprar = document.querySelectorAll('.comprar');
+
+// Função para adicionar um produto ao carrinho
+function adicionarAoCarrinho() {
+  // Lógica para adicionar o produto ao carrinho
+  // ...
+
+  // Exemplo de mensagem para o usuário
+  alert('Produto adicionado ao carrinho!');
+}
+
+// Adiciona o evento de clique em cada botão "Comprar"
+botoesComprar.forEach(function(botao) {
+  botao.addEventListener('click', adicionarAoCarrinho);
+});
